@@ -69,3 +69,231 @@ a {
 .mt-2 {
   margin-top: 2px;
 }
+/* product */
+.product-content{
+  display: flex;
+  gap: 15px;
+}
+
+.product-content>.product-content-left{
+  width: 50%;
+  display: flex;
+  gap: 15px;
+}
+
+.product-big-img{
+  width: 80%;
+}
+
+.product-big-img>img{
+  width: 100%;
+}
+
+.product-small-img{
+  width: 200px;
+}
+
+.product-small-img>img{
+  height: 120px;
+  width: 100%;
+  margin-bottom: 10px;
+  border: 1px solid black;
+}
+
+.product-content>.product-content-right{
+  width: 50%;
+}
+
+.product-content-right-product-name >h4{
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.product-content-right-product-name > p{
+  color: #d68241;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.product-tag{
+  margin-top: 10px;
+}
+
+.product-tag .btn{
+  outline: none;
+  border: 1px solid #0d0d0d;
+  padding: 2px 10px;
+  margin-left: 5px;
+}
+
+.product-tag .btn:hover{
+  background-color: #a95716;
+  color: #f1f1f1;
+}
+
+.quantity > input{
+  padding: 5px;
+  width: 50px;
+}
+
+.quantity > p{
+  color: red;
+  margin: 5px 0;
+}
+
+.product-button>button:first-child{
+  display: flex;
+  gap: 15px;
+  transition: all 0.3s ease;
+}
+
+.product-button>button:first-child:hover{
+  background-color: #333;
+  color: #fff;
+}
+
+.product-button>button{
+  text-transform: uppercase;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+  height: 40px;
+  width: 160px;
+}
+
+.product-button>a{
+  width: 160px;
+  text-transform: uppercase;
+}
+
+.product-button>button:last-child{
+  transition: all 0.3s ease;
+}
+
+.product-button>button:last-child:hover{
+  background-color: #d68241;
+  color: #fff;
+}
+
+.product-icon{
+  display: flex;
+  gap: 15px;
+}
+
+.product-icon>.icon-item{
+  display: flex;
+  gap: 5px;
+}
+
+.shopping-cart-list img{
+  width: 150px;
+}
+
+.shopping-cart-list input{
+  width: 50px;
+  text-align: center;
+}
+
+.body-product .title{
+  width: 100%;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.body-product .title h4{
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.body-product .show-product{
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: center;
+}
+
+.body-product .show-product .card-image{
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.body-product .show-product .card-image .items{
+  position: relative;
+  display: block;
+  width: 200px;
+  height: 250px;
+
+  box-sizing: border-box;
+}
+
+.body-product .show-product .card-image .items .text h3,.body-product .show-product .card-image .items .text p{
+  text-align: center;
+  font-size: 20px;
+}
+
+.body-product .show-product .card-image .items .image img{
+  width: 200px;
+  border-radius: 20px;
+}
+
+.body-product .show-product .card-image .items .text{
+  font-weight: 500;
+}
+
+.body-product .show-product .card-image .items .text{
+  text-align: left;
+  padding: 5px;
+}
+
+.body-product .show-product .items .button{
+  opacity: 1;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s ease-out;
+  opacity: 0;
+}
+
+.body-product .show-product .items:hover .button{
+  opacity: 1;
+  top: 50%;
+  transition: -0.5s;
+}
+
+.body-product .show-product .items .button a,.body-product .show-product .items .button button{
+  display: inline-block;
+  padding: 5px 10px;
+  width: 150px;
+  margin-bottom: 5px;
+  background-color: #2e2efe;
+  color: #ffff;
+  text-align: center;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+.body-product .show-product .items .button a:hover,.body-product .show-product .items .button button:hover{
+  background-color: #fe2e64;
+}
+
+.body-product .show-product .items .button{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%,-50%);    
+}
+
+.body-product .show-product .items .button button{
+  outline: none;
+  border: none;
+}
