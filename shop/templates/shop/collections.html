@@ -1,0 +1,59 @@
+{% extends 'shop/layouts/main.html' %}
+{% block title %}
+Danh mục | Shopwatch
+{% endblock title %}
+{% block content %}
+  <section class="py-5 text-center container"  style="margin-top:70px;">
+    <div class="row py-lg-5">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h1 class="fw-light">Bán chạy nhất</h1>
+        <p class="lead text-muted">Sản phẩm phổ biến nhất của chúng tôi dựa trên doanh số bán hàng. Cập nhật hàng giờ.</p>
+        <p>
+          
+          <!-- <a href="{% url 'login' %}" class="btn btn-primary my-2">Already a User</a> -->
+          <!-- <a href="{% url 'register' %}" class="btn btn-secondary my-2">Register</a> -->
+        </p>
+      </div>
+    </div>
+  </section>
+  <section class="bg-light py-4 my-5" style="min-height:600px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h4 class="mb-3">Danh mục</h4>
+          <hr class="hrline" style="border-color:#b8bfc2;">
+          {% include 'shop/inc/message.html' %}
+        </div>
+        {% for item in catagory %}
+        <div class="col-md-4 col-lg-3">
+          <div class="card my-3">
+            <img src="{{item.image.url}}"  class="card-image-top" style="height: 350px;width: 300px;" alt="Categories">
+            <hr class="hrline" style="border-color:#182024;;">
+            <a href="{% url 'collections' item.name %}">           
+            <div class="card-body">
+              <h5 class="card-title text-primary" style="font-weight: bold;font-size: large;">{{ item.name }}</h5>
+              <p class="card-text" style="color: black;">{{ item.description }}</p>
+              <a href="{% url 'collections' item.name %}" class="btn btn-primary mt-2" >View All</a>
+            </div>
+          </a>
+          </div>
+        </div>
+        {% endfor %}
+
+      </div>
+      </div>
+  </section>
+  <style>
+    .card-title {
+      display: inline;
+    }
+    
+    .text-primary {
+      color: black;
+    }
+    
+    .mt-2 {
+      margin-top: 2px;
+    }
+    </style>
+{% endblock content %}
